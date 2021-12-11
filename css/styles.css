@@ -495,7 +495,7 @@ background-color: rgba(47, 48, 58, 0.8);
   align-items: center;
   justify-content: center;
   color: #afb1b8;
-  transition: border-color var(--timing-duration) var(--timing-function) color var(--timing-duration) var(--timing-function)
+  transition: border-color var(--timing-duration) var(--timing-function), color var(--timing-duration) var(--timing-function)
 }
 
 .clients-logo {
@@ -507,11 +507,7 @@ background-color: rgba(47, 48, 58, 0.8);
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent-color);
-}
-
-.clients-link:hover .clients-logo,
-.clients-link:focus .clients-logo {
-  color: var(--accent-color);
+  color: var(--accent-color)
 }
 
 /* portfolio button*/
@@ -578,6 +574,10 @@ transition: transform var(--timing-duration) var(--timing-function);
 .card-link:hover .card-top-text,
 .card-link:focus .card-top-text {
 transform: translateY(0);
+}
+
+.card-link:hover,
+.card-link:focus {
 transition: box-shadow var(--timing-duration) var(--timing-function);
 }
 
